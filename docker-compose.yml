@@ -78,6 +78,7 @@ services:
 
   relayer:
     container_name: relayer
+    restart: always
     image: "webbshi/ibc-relayer"
     #    ports:
 #      - "36659-36660:26656-26657"
