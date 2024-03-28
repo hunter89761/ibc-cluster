@@ -86,7 +86,7 @@ services:
     command: 'sh -c /relayer/relayer-run.sh'
     networks:
       localnet:
-        ipv4_address: 192.167.10.9
+        ipv4_address: 192.167.10.10
 
 networks:
   localnet:
