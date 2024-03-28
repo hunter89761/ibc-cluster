@@ -12,7 +12,7 @@ RUN apk add --no-cache gcc musl-dev linux-headers git make
 WORKDIR /
 RUN git clone https://github.com/hunter89761/relayer.git
 
-RUN cd /relayer && make install
+RUN cd /relayer && git checkout v2.4.0 && make install
 
 # Pull Geth into a second stage deploy alpine container
 FROM alpine:latest
