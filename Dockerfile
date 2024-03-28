@@ -27,4 +27,4 @@ COPY --from=builder  /relayer/entrypoint.sh /opt/entrypoint.sh
 EXPOSE 26656 26657 1317 9090
 
 ENTRYPOINT [ "/bin/bash", "/opt/entrypoint.sh" ]
-CMD [ "celestia-appd" ]
+CMD [ "rly" ]
