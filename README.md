@@ -4,5 +4,5 @@
 
 ```solidity
 cast chain-id
-cast chain-id --rpc-url http://localhost:
+cast chain-id --rpc-url http://localhost:18545
 ```

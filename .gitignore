@@ -86,3 +86,5 @@ dependency-graph.png
 contracts/@openzeppelin/*
 /evmos-chain/
 /chainData/
+/relayer/
+/relayer/
