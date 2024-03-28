@@ -1,0 +1,87 @@
+version: '3'
+
+services:
+  node0:
+    container_name: node0
+    image: "webbshi/evmosd"
+    ports:
+      - "26656-26657:26656-26657"
+      - "8545-8546:8545-8546"
+    volumes:
+      - ./chainData/ernest1/node0/evmosd:/evmos:Z
+    command: sh -c "evmosd start --home /evmos"
+    networks:
+      localnet:
+        ipv4_address: 192.167.10.2
+
+  node1:
+    container_name: node1
+    image: "webbshi/evmosd"
+    ports:
+      - "26659-26660:26656-26657"
+      - "8045-8046:8545-8546"
+    volumes:
+      - ./chainData/ernest1/node1/evmosd:/evmos:Z
+    command: sh -c "evmosd start --home /evmos"
+    networks:
+      localnet:
+        ipv4_address: 192.167.10.3
+
+  node2:
+    container_name: node2
+    image: "webbshi/evmosd"
+    ports:
+      - "26661-26662:26656-26657"
+    volumes:
+      - ./chainData/ernest1/node2/evmosd:/evmos:Z
+    command: sh -c "evmosd start --home /evmos"
+    networks:
+      localnet:
+        ipv4_address: 192.167.10.4
+
+  peer0:
+    container_name: peer0
+    image: "webbshi/evmosd"
+    ports:
+      - "26663-26664:26656-26657"
+      - "18545-18546:8545-8546"
+    volumes:
+      - ./chainData/ernest2/node0/evmosd:/evmos:Z
+    command: sh -c "evmosd start --home /evmos"
+    networks:
+      localnet:
+        ipv4_address: 192.167.10.7
+
+  peer1:
+    container_name: peer1
+    image: "webbshi/evmosd"
+    ports:
+      - "36656-36657:26656-26657"
+    volumes:
+      - ./chainData/ernest2/node1/evmosd:/evmos:Z
+    command: sh -c "evmosd start --home /evmos"
+    networks:
+      localnet:
+        ipv4_address: 192.167.10.8
+
+  peer2:
+    container_name: peer2
+    image: "webbshi/evmosd"
+    ports:
+      - "36659-36660:26656-26657"
+    volumes:
+      - ./chainData/ernest2/node2/evmosd:/evmos:Z
+    command: sh -c "evmosd start --home /evmos"
+    networks:
+      localnet:
+        ipv4_address: 192.167.10.9
+
+
+networks:
+  localnet:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        -
+          subnet: 192.167.10.0/16
