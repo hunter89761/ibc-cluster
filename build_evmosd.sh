@@ -11,7 +11,6 @@ docker push webbshi/evmosd
 
 
 cd ..
-git clone git@github.com:hunter89761/relayer.git
 docker build -t webbshi/ibc-relayer .
 docker push webbshi/ibc-relayer
 
