@@ -32,3 +32,9 @@ rly paths fetch --home "./relayer1"
 rly paths list --home "./relayer1"
 rly start --home "./relayer1"
 ```
+
+### cast
+```shell
+cast bl 1
+cast bl 1 --rpc-url http://localhost:18545
+```

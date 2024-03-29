@@ -39,42 +39,78 @@ services:
       localnet:
         ipv4_address: 192.167.10.4
 
-  peer0:
-    container_name: peer0
-    image: "webbshi/evmosd"
+  celestia-app1:
+    image: webbshi/celestia-app:v1.6.0
+    restart: always
+    container_name: 'app1'
+    command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
+    environment:
+      APP_PATH: '/home/celestia/'
     ports:
-      - "26663-26664:26656-26657"
-      - "18545-18546:8545-8546"
+      - 36656:26656
+      - 36657:26657
+      - 1317:1317
+      - 9090:9090
     volumes:
-      - ./chainData/ernest2/node0/evmosd:/evmos:Z
-    command: sh -c "evmosd start --home /evmos"
+      - ./chainData/da-network/peer1:/home/celestia/.celestia-app
     networks:
       localnet:
-        ipv4_address: 192.167.10.7
+        ipv4_address: 192.167.10.12
 
-  peer1:
-    container_name: peer1
-    image: "webbshi/evmosd"
+  celestia-app2:
+    image: webbshi/celestia-app:v1.6.0
+    restart: always
+    container_name: 'app2'
+    command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
+    environment:
+      APP_PATH: '/home/celestia/'
     ports:
-      - "36656-36657:26656-26657"
+      - 36666:26656
+      - 36667:26657
+      - 11317:1317
+      - 19090:9090
     volumes:
-      - ./chainData/ernest2/node1/evmosd:/evmos:Z
-    command: sh -c "evmosd start --home /evmos"
+      - ./chainData/da-network/peer2:/home/celestia/.celestia-app
     networks:
       localnet:
-        ipv4_address: 192.167.10.8
+        ipv4_address: 192.167.10.13
 
-  peer2:
-    container_name: peer2
-    image: "webbshi/evmosd"
+  celestia-app3:
+    image: webbshi/celestia-app:v1.6.0
+    restart: always
+    container_name: 'app3'
+    command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
+    environment:
+      APP_PATH: '/home/celestia/'
     ports:
-      - "36659-36660:26656-26657"
+      - 36676:26656
+      - 36677:26657
+      - 21317:1317
+      - 29090:9090
     volumes:
-      - ./chainData/ernest2/node2/evmosd:/evmos:Z
-    command: sh -c "evmosd start --home /evmos"
+      - ./chainData/da-network/peer3:/home/celestia/.celestia-app
     networks:
       localnet:
-        ipv4_address: 192.167.10.9
+        ipv4_address: 192.167.10.14
+
+
+  celestia-app4:
+    image: webbshi/celestia-app:v1.6.0
+    restart: always
+    container_name: 'app4'
+    command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
+    environment:
+      APP_PATH: '/home/celestia/'
+    ports:
+      - 36686:26656
+      - 36687:26657
+      - 31317:1317
+      - 39090:9090
+    volumes:
+      - ./chainData/da-network/peer4:/home/celestia/.celestia-app
+    networks:
+      localnet:
+        ipv4_address: 192.167.10.15
 
   relayer:
     container_name: relayer
