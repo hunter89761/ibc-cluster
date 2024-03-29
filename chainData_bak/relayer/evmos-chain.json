@@ -1,5 +1,5 @@
 {
-  "type": "evmos",
+  "type": "cosmos",
   "value": {
     "key": "default",
     "chain-id": "evmos_9000-1",
