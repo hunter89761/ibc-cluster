@@ -15,7 +15,7 @@
 proxy_app = "tcp://0.0.0.0:26658"
 
 # A custom human readable name for this node
-moniker = "test"
+moniker = "celestia-9002"
 
 # If this node is many blocks behind the tip of the chain, FastSync
 # allows them to catchup quickly by downloading blocks in parallel
@@ -212,7 +212,7 @@ external_address = ""
 seeds = ""
 
 # Comma separated list of nodes to keep persistent connections to
-persistent_peers = "c20044b9c280f3a585ac65bd8e9203390a0241c6@192.167.10.12:26656"
+persistent_peers = "b5ccc13622af2079fd3609ad22ec5270dc684a00@192.167.10.12:26656"
 
 # UPNP port forwarding
 upnp = false

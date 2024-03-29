@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sleep 1000
+
 rly config init --home "./relayer"
 rly chains add evmos kujira --home "./relayer"
 

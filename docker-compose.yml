@@ -120,7 +120,7 @@ services:
 #      - "36659-36660:26656-26657"
     volumes:
       - ./chainData/relayer:/relayer:Z
-    command: 'sh -c /relayer/relayer-run.sh'
+    command: 'sh -c /relayer/relayer-local-run.sh'
     networks:
       localnet:
         ipv4_address: 192.167.10.10

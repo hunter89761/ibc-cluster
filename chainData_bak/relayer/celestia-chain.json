@@ -1,0 +1,16 @@
+{
+  "type": "celestia",
+  "value": {
+    "key": "default",
+    "chain-id": "celestia-9002",
+    "rpc-addr": "http://192.167.10.12:26657",
+    "account-prefix": "celestia",
+    "keyring-backend": "test",
+    "gas-adjustment": 1.2,
+    "gas-prices": "0.01utia",
+    "debug": true,
+    "timeout": "20s",
+    "output-format": "json",
+    "sign-mode": "direct"
+  }
+}
