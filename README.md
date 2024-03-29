@@ -38,3 +38,9 @@ rly start --home "./relayer1"
 cast bl 1
 cast bl 1 --rpc-url http://localhost:18545
 ```
+
+
+### relayer
+```shell
+rly chains add --file evmos-chain.json
+```
