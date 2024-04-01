@@ -82,6 +82,15 @@
           ]
         },
         {
+          "address": "evmos1ftajzzcnfm5rdmgmzecpva7cvty8dgj546qplx",
+          "coins": [
+            {
+              "denom": "aevmos",
+              "amount": "5000000000000000000000"
+            }
+          ]
+        },
+        {
           "address": "evmos1ncs493lra2nrq7sgq3guc2vlm9j0newczvfzze",
           "coins": [
             {

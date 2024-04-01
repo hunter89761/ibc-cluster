@@ -82,6 +82,15 @@
           ]
         },
         {
+          "address": "celestia1cqv76myyhj7wjej6pt3rmh580p5s3u74c3m8yx",
+          "coins": [
+            {
+              "denom": "utia",
+              "amount": "1000000000000000"
+            }
+          ]
+        },
+        {
           "address": "celestia14us9ge243792h8j739n3uftw95yj6y6yqq3ac8",
           "coins": [
             {
@@ -112,7 +121,7 @@
       "supply": [
         {
           "denom": "utia",
-          "amount": "4000000000000000"
+          "amount": "5000000000000000"
         }
       ],
       "denom_metadata": [
