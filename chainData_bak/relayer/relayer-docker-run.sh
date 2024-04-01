@@ -28,7 +28,6 @@ rly keys use celestia node0
 rly q balance evmos validator1
 rly q balance celestia node0
 
-
 # rly paths new [src-chain-id] [dst-chain-id] [path-name] [flags]
 rly paths new evmos_9000-1 celestia-9002 test_path
 

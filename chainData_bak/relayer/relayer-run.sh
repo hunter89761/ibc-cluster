@@ -1,26 +1,16 @@
 #!/bin/bash
 
-sleep 1000
+rm -rf ~/.relayer/
 
-rly config init --home "./relayer"
-rly chains add evmos kujira --home "./relayer"
+rly config init
+rly chains add --file ./local/evmos-chain.json evmos
+echo "rly chains added evmos"
 
-rly keys restore evmos evmos1 \
-"test test test test test test test test test test test junk" \
---home "./relayer"
+rly chains add --file ./local/celestia-chain.json celestia
+echo "rly chains added celestia"
 
-rly keys restore kujira kujira1 \
-"test test test test test test test test test test test junk" \
---home "./relayer"
+rly chains show evmos
+rly chains show celestia
 
-rly keys use evmos evmos1 --home "./relayer"
-rly keys use kujira kujira1 --home "./relayer"
-
-rly q balance evmos evmos1 --home "./relayer"
-rly q balance kujira kujira1 --home "./relayer"
-
-
-rly paths fetch --home "./relayer"
-
-rly paths list --home "./relayer"
-rly start --home "./relayer"
+echo "begin sleeping 10 seconds"
+sleep 10
