@@ -15,8 +15,11 @@ rly chains show celestia
 echo "begin sleeping 10 seconds"
 cp -r  ./keys ~/.relayer/
 
-rly keys use evmos validator1
-rly keys use celestia node0
+rly keys list evmos
+rly keys list celestia
+
+rly keys add evmos validator1
+rly keys add celestia node0
 
 
 rly q balance evmos validator1

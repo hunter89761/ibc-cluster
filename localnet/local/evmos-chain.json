@@ -1,7 +1,7 @@
 {
   "type": "cosmos",
   "value": {
-    "key": "default",
+    "key": "validator1",
     "chain-id": "evmos_9000-1",
     "rpc-addr": "http://localhost:26657",
     "account-prefix": "evmos",

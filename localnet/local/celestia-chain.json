@@ -1,7 +1,7 @@
 {
   "type": "cosmos",
   "value": {
-    "key": "default",
+    "key": "node0",
     "chain-id": "celestia-9002",
     "rpc-addr": "http://localhost:36657",
     "account-prefix": "celestia",
