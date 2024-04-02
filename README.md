@@ -42,5 +42,5 @@ cast bl 1 --rpc-url http://localhost:18545
 
 ### relayer
 ```shell
-rly chains add --file evmos-chain.json
+rly chains add --file cele-chain.json
 ```

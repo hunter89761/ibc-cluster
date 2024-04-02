@@ -1,43 +1,78 @@
 version: '3'
 
 services:
-  node0:
-    container_name: node0
-    image: "webbshi/evmosd"
+  cele1:
+    image: webbshi/celestia-app:v1.6.0
+    restart: always
+    container_name: 'cele1'
+    command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
+    environment:
+      APP_PATH: '/home/celestia/'
     ports:
-      - "26656-26657:26656-26657"
-      - "8545-8546:8545-8546"
+      - 26656:26656
+      - 26657:26657
+      - 21317:1317
+      - 29090:9090
     volumes:
-      - ./chainData/ernest1/node0/evmosd:/evmos:Z
-    command: sh -c "evmosd start --home /evmos"
+      - ./chainData/cele-network/peer1:/home/celestia/.celestia-app
     networks:
       localnet:
         ipv4_address: 192.167.10.2
 
-  node1:
-    container_name: node1
-    image: "webbshi/evmosd"
+  cele2:
+    image: webbshi/celestia-app:v1.6.0
+    restart: always
+    container_name: 'cele2'
+    command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
+    environment:
+      APP_PATH: '/home/celestia/'
     ports:
-      - "26659-26660:26656-26657"
-      - "8045-8046:8545-8546"
+      - 26666:26656
+      - 26667:26657
+      - 21327:1317
+      - 29091:9090
     volumes:
-      - ./chainData/ernest1/node1/evmosd:/evmos:Z
-    command: sh -c "evmosd start --home /evmos"
+      - ./chainData/cele-network/peer2:/home/celestia/.celestia-app
     networks:
       localnet:
         ipv4_address: 192.167.10.3
 
-  node2:
-    container_name: node2
-    image: "webbshi/evmosd"
+  cele3:
+    image: webbshi/celestia-app:v1.6.0
+    restart: always
+    container_name: 'cele3'
+    command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
+    environment:
+      APP_PATH: '/home/celestia/'
     ports:
-      - "26661-26662:26656-26657"
+      - 26676:26656
+      - 26677:26657
+      - 21337:1317
+      - 29093:9090
     volumes:
-      - ./chainData/ernest1/node2/evmosd:/evmos:Z
-    command: sh -c "evmosd start --home /evmos"
+      - ./chainData/cele-network/peer3:/home/celestia/.celestia-app
     networks:
       localnet:
         ipv4_address: 192.167.10.4
+
+
+  cele4:
+    image: webbshi/celestia-app:v1.6.0
+    restart: always
+    container_name: 'cele4'
+    command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
+    environment:
+      APP_PATH: '/home/celestia/'
+    ports:
+      - 26686:26656
+      - 26687:26657
+      - 21347:1317
+      - 29094:9090
+    volumes:
+      - ./chainData/cele-network/peer4:/home/celestia/.celestia-app
+    networks:
+      localnet:
+        ipv4_address: 192.167.10.5
 
   celestia-app1:
     image: webbshi/celestia-app:v1.6.0
@@ -49,8 +84,8 @@ services:
     ports:
       - 36656:26656
       - 36657:26657
-      - 1317:1317
-      - 9090:9090
+      - 11317:1317
+      - 19090:9090
     volumes:
       - ./chainData/da-network/peer1:/home/celestia/.celestia-app
     networks:
@@ -67,8 +102,8 @@ services:
     ports:
       - 36666:26656
       - 36667:26657
-      - 11317:1317
-      - 19090:9090
+      - 11327:1317
+      - 19091:9090
     volumes:
       - ./chainData/da-network/peer2:/home/celestia/.celestia-app
     networks:
@@ -85,8 +120,8 @@ services:
     ports:
       - 36676:26656
       - 36677:26657
-      - 21317:1317
-      - 29090:9090
+      - 11337:1317
+      - 19092:9090
     volumes:
       - ./chainData/da-network/peer3:/home/celestia/.celestia-app
     networks:
@@ -104,8 +139,8 @@ services:
     ports:
       - 36686:26656
       - 36687:26657
-      - 31317:1317
-      - 39090:9090
+      - 11347:1317
+      - 19093:9090
     volumes:
       - ./chainData/da-network/peer4:/home/celestia/.celestia-app
     networks:
