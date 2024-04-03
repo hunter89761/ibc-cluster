@@ -4,7 +4,7 @@ services:
   cele1:
     image: webbshi/celestia-app:v1.6.0
     restart: always
-    container_name: 'cele1'
+    container_name: 'cele-9000-1'
     command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
     environment:
       APP_PATH: '/home/celestia/'
@@ -22,7 +22,7 @@ services:
   cele2:
     image: webbshi/celestia-app:v1.6.0
     restart: always
-    container_name: 'cele2'
+    container_name: 'cele-9000-2'
     command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
     environment:
       APP_PATH: '/home/celestia/'
@@ -40,7 +40,7 @@ services:
   cele3:
     image: webbshi/celestia-app:v1.6.0
     restart: always
-    container_name: 'cele3'
+    container_name: 'cele-9000-3'
     command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
     environment:
       APP_PATH: '/home/celestia/'
@@ -59,7 +59,7 @@ services:
   cele4:
     image: webbshi/celestia-app:v1.6.0
     restart: always
-    container_name: 'cele4'
+    container_name: 'cele-9000-4'
     command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
     environment:
       APP_PATH: '/home/celestia/'
@@ -77,7 +77,7 @@ services:
   celestia-app1:
     image: webbshi/celestia-app:v1.6.0
     restart: always
-    container_name: 'app1'
+    container_name: 'celestia-9002-1'
     command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
     environment:
       APP_PATH: '/home/celestia/'
@@ -95,7 +95,7 @@ services:
   celestia-app2:
     image: webbshi/celestia-app:v1.6.0
     restart: always
-    container_name: 'app2'
+    container_name: 'celestia-9002-2'
     command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
     environment:
       APP_PATH: '/home/celestia/'
@@ -113,7 +113,7 @@ services:
   celestia-app3:
     image: webbshi/celestia-app:v1.6.0
     restart: always
-    container_name: 'app3'
+    container_name: 'celestia-9002-3'
     command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
     environment:
       APP_PATH: '/home/celestia/'
@@ -132,7 +132,7 @@ services:
   celestia-app4:
     image: webbshi/celestia-app:v1.6.0
     restart: always
-    container_name: 'app4'
+    container_name: 'celestia-9002-4'
     command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
     environment:
       APP_PATH: '/home/celestia/'

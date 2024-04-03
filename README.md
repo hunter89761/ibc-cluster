@@ -44,3 +44,22 @@ cast bl 1 --rpc-url http://localhost:18545
 ```shell
 rly chains add --file cele-chain.json
 ```
+
+### config change
+```shell
+# disable discard abci response
+discard_abci_responses = false
+
+## enable tx indexer
+indexer = "kv"
+```
+
+### query connection
+```shell
+celestia-appd query ibc connection connections --node tcp://localhost:36657
+celestia-appd query ibc connection connections --node tcp://localhost:26657
+
+
+celestia-appd query ibc client state 07-tendermint-0 --node tcp://localhost:36657
+celestia-appd query ibc client state 07-tendermint-0 --node tcp://localhost:26657
+```

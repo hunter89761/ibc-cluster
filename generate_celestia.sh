@@ -36,7 +36,7 @@ do
   cp -f ./da-network/peer1/config/genesis.json $APP_PATH/config
 
   sed -i '' 's/127.0.0.1/0.0.0.0/g' $APP_PATH/config/config.toml
-  sed -i '' 's/timeout_commit = "11s"/timeout_commit = "8s"/g' $APP_PATH/config/config.toml
+  sed -i '' 's/timeout_commit = "11s"/timeout_commit = "20s"/g' $APP_PATH/config/config.toml
 
   name=$(jq -r --argjson index "$i" '.app_state.genutil.gen_txs[$index-1].body.memo' $APP_PATH/config/genesis.json)
   echo "$name"
