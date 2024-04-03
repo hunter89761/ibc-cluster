@@ -56,10 +56,18 @@ indexer = "kv"
 
 ### query connection
 ```shell
+
+# celestia-9002
 celestia-appd query ibc connection connections --node tcp://localhost:36657
+
+# cele-9000
 celestia-appd query ibc connection connections --node tcp://localhost:26657
 
 
+# celestia-9002
 celestia-appd query ibc client state 07-tendermint-0 --node tcp://localhost:36657
+
+# cele-9000
 celestia-appd query ibc client state 07-tendermint-0 --node tcp://localhost:26657
+
 ```
