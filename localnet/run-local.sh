@@ -28,13 +28,11 @@ rly q balance celestia node0
 # rly paths new [src-chain-id] [dst-chain-id] [path-name] [flags]
 rly paths new cele-9000 celestia-9002 test_path
 
-#sleep 20
-#echo "rly transact clients test_path"
-#rly transact clients test_path
+echo "rly transact clients test_path"
+rly transact clients test_path
 
 echo "rly transact connection test_path"
-sleep 60
-rly transact connection test_path --block-history 40
+rly transact connection test_path --block-history 40 --debug
 
 
 echo "rly transact channel test_path"
