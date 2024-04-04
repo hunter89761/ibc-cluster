@@ -10,6 +10,7 @@ echo "rly chains added celestia"
 rly chains show cele
 rly chains show celestia
 
+cp -r ./relayer/keys ~/.relayer/
 
 echo "begin sleeping 60 seconds"
 sleep 50
