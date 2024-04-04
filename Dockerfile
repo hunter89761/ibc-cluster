@@ -12,7 +12,7 @@ RUN apk add --no-cache gcc musl-dev linux-headers git make
 WORKDIR /
 RUN git clone https://github.com/hunter89761/relayer.git
 
-RUN cd /relayer && git pull && git checkout hunter/relayer && make install
+RUN cd /relayer && git pull && git checkout celestia/relayer && make install
 
 # Pull Geth into a second stage deploy alpine container
 FROM alpine:latest

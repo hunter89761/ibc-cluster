@@ -10,18 +10,15 @@ echo "rly chains added celestia"
 rly chains show cele
 rly chains show celestia
 
-echo "begin sleeping 10 seconds"
-sleep 10
 
-#
-#rly keys add cele validator1
-#rly keys add celestia node0
+echo "begin sleeping 60 seconds"
+sleep 50
 
-mv ./relayer/keys ~/.relayer/
+rly keys list cele
+rly keys list celestia
 
-rly keys use cele validator1
-rly keys use celestia node0
-
+rly keys add cele validator1
+rly keys add celestia node0
 
 rly q balance cele validator1
 rly q balance celestia node0
@@ -29,8 +26,8 @@ rly q balance celestia node0
 # rly paths new [src-chain-id] [dst-chain-id] [path-name] [flags]
 rly paths new cele-9000 celestia-9002 test_path
 
-echo "rly trnasact link test_path"
+echo "rly transact clients test_path"
+rly transact link test_path --debug
 
-rly transact link test_path
-
-sleep 1000
+# echo "rly start"
+rly start --debug
