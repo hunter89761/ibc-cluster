@@ -167,7 +167,7 @@ experimental_close_on_slow_client = false
 # WARNING: Using a value larger than 10s will result in increasing the
 # global HTTP write timeout, which applies to all connections and endpoints.
 # See https://github.com/tendermint/tendermint/issues/3435
-timeout_broadcast_tx_commit = "30s"
+timeout_broadcast_tx_commit = "50s"
 
 # Maximum size of request body, in bytes
 max_body_bytes = 8388608
@@ -212,7 +212,7 @@ external_address = ""
 seeds = ""
 
 # Comma separated list of nodes to keep persistent connections to
-persistent_peers = "be3ec0df17d30cd11bd102bfea74c3b00a5c3aa5@192.167.10.2:26656"
+persistent_peers = "99a88b2427256f6328ec434a5a018c02974873b3@192.167.10.2:26656"
 
 # UPNP port forwarding
 upnp = false
@@ -410,7 +410,7 @@ skip_timeout_commit = false
 
 # EmptyBlocks mode and possible interval between empty blocks
 create_empty_blocks = true
-create_empty_blocks_interval = "25s"
+create_empty_blocks_interval = "0s"
 
 # Reactor sleep duration parameters
 peer_gossip_sleep_duration = "100ms"

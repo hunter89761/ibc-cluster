@@ -30,5 +30,7 @@ rly paths new cele-9000 celestia-9002 test_path
 echo "rly transact clients test_path"
 rly transact link test_path --debug
 
+echo "link successed!!!\n\n\n\n\n\n\n\n"
+
 # echo "rly start"
 rly start --debug

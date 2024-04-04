@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2024-04-02T09:19:03.487237Z",
+  "genesis_time": "2024-04-04T15:51:27.291852Z",
   "chain_id": "cele-9000",
   "initial_height": "1",
   "consensus_params": {
@@ -35,35 +35,35 @@
       "accounts": [
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "celestia14juh2npe3x6d6v6gz7hdmls49g26fphvqzum4r",
+          "address": "cele1twfrzagprk0alfe6qjvyv20m6xqu6kulqee8u3",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "celestia1qs065k4437mdxt0ecj2mjw2rptfy7gnxrkaayw",
+          "address": "cele14dms5rv5fk54krjxtpyl2cu3zuk04j7lvx55f7",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "celestia17h00pgfurt3258paeptfhe8qnx2h4znk4nztf9",
+          "address": "cele1ddhwmdkehpc6f0plvpyzs2c2cqk2k3qv6zamg7",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "celestia1kt3w6tdzsxwxz6u45vyexe6rpk43wnffqa6f7z",
+          "address": "cele19sxv0wugx6sqxl2qv9zg5jsh2evdmkfdry2ca8",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "celestia1ftajzzcnfm5rdmgmzecpva7cvty8dgj5x3qllr",
+          "address": "cele1ftajzzcnfm5rdmgmzecpva7cvty8dgj5ynjqrk",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
@@ -80,46 +80,46 @@
       },
       "balances": [
         {
-          "address": "celestia1qs065k4437mdxt0ecj2mjw2rptfy7gnxrkaayw",
+          "address": "cele19sxv0wugx6sqxl2qv9zg5jsh2evdmkfdry2ca8",
           "coins": [
             {
-              "denom": "utia",
+              "denom": "ucele",
               "amount": "1000000000000000"
             }
           ]
         },
         {
-          "address": "celestia14juh2npe3x6d6v6gz7hdmls49g26fphvqzum4r",
+          "address": "cele1twfrzagprk0alfe6qjvyv20m6xqu6kulqee8u3",
           "coins": [
             {
-              "denom": "utia",
+              "denom": "ucele",
               "amount": "1000000000000000"
             }
           ]
         },
         {
-          "address": "celestia1kt3w6tdzsxwxz6u45vyexe6rpk43wnffqa6f7z",
+          "address": "cele1ddhwmdkehpc6f0plvpyzs2c2cqk2k3qv6zamg7",
           "coins": [
             {
-              "denom": "utia",
+              "denom": "ucele",
               "amount": "1000000000000000"
             }
           ]
         },
         {
-          "address": "celestia17h00pgfurt3258paeptfhe8qnx2h4znk4nztf9",
+          "address": "cele14dms5rv5fk54krjxtpyl2cu3zuk04j7lvx55f7",
           "coins": [
             {
-              "denom": "utia",
+              "denom": "ucele",
               "amount": "1000000000000000"
             }
           ]
         },
         {
-          "address": "celestia1ftajzzcnfm5rdmgmzecpva7cvty8dgj5x3qllr",
+          "address": "cele1ftajzzcnfm5rdmgmzecpva7cvty8dgj5ynjqrk",
           "coins": [
             {
-              "denom": "utia",
+              "denom": "ucele",
               "amount": "1000000000000000"
             }
           ]
@@ -127,7 +127,7 @@
       ],
       "supply": [
         {
-          "denom": "utia",
+          "denom": "ucele",
           "amount": "5000000000000000"
         }
       ],
@@ -136,22 +136,22 @@
           "description": "The native token of the Celestia network.",
           "denom_units": [
             {
-              "denom": "utia",
+              "denom": "ucele",
               "exponent": 0,
               "aliases": [
-                "microtia"
+                "microcele"
               ]
             },
             {
-              "denom": "TIA",
+              "denom": "CELE",
               "exponent": 6,
               "aliases": []
             }
           ],
-          "base": "utia",
-          "display": "TIA",
-          "name": "TIA",
-          "symbol": "TIA",
+          "base": "ucele",
+          "display": "CELE",
+          "name": "CELE",
+          "symbol": "CELE",
           "uri": "",
           "uri_hash": ""
         }
@@ -169,7 +169,7 @@
     },
     "crisis": {
       "constant_fee": {
-        "denom": "utia",
+        "denom": "ucele",
         "amount": "1000"
       }
     },
@@ -218,19 +218,19 @@
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "celestia1kt3w6tdzsxwxz6u45vyexe6rpk43wnffqa6f7z",
-                "validator_address": "celestiavaloper1kt3w6tdzsxwxz6u45vyexe6rpk43wnff9zcsgy",
+                "delegator_address": "cele19sxv0wugx6sqxl2qv9zg5jsh2evdmkfdry2ca8",
+                "validator_address": "celevaloper19sxv0wugx6sqxl2qv9zg5jsh2evdmkfdvvvkg0",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "pak5dozMkNLJzkTxTSXy3Vb27p1XRl85fkKXzXKgvMw="
+                  "key": "WnBdsqx3nxxrq8noqRlvuVUHt5vs2UPl2zG5DdnldxE="
                 },
                 "value": {
-                  "denom": "utia",
+                  "denom": "ucele",
                   "amount": "5000000000"
                 }
               }
             ],
-            "memo": "023bcf3a3d1805f2f4cc0247004cbe71aa0b2183@192.168.71.32:26656",
+            "memo": "4f09610bc3088273892d108340e9c93833ffbd32@192.168.71.32:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -240,7 +240,7 @@
               {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "A96b6HN8Z5LPAcqX9wxkn1jjmEuyZJ5GoEyEFYWRc34/"
+                  "key": "A0UQVdxWVBzbdcqLWn7O58WUygPMqiPEatgg0FXWtC3Q"
                 },
                 "mode_info": {
                   "single": {
@@ -259,7 +259,7 @@
             "tip": null
           },
           "signatures": [
-            "Kx/iJC/dB23klacrLjfOi7hwx2jDHgDIbL/SDAkWbypnZjR9+g0FzYCQVOl2Ii0icu0AO2asTn7SgHWncslCYQ=="
+            "+cBn/Yh1Yq7p/r1PKIWpV5utbuGvutGhXxvOc3t3wCsspuj6fGrW41ohgEi2fIzCeuVig6P6h0L1fZ6M7/+cYA=="
           ]
         },
         {
@@ -280,19 +280,19 @@
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "celestia17h00pgfurt3258paeptfhe8qnx2h4znk4nztf9",
-                "validator_address": "celestiavaloper17h00pgfurt3258paeptfhe8qnx2h4znksvqjlr",
+                "delegator_address": "cele1twfrzagprk0alfe6qjvyv20m6xqu6kulqee8u3",
+                "validator_address": "celevaloper1twfrzagprk0alfe6qjvyv20m6xqu6kul03lffe",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "G8ZHVWDFQNYQMDs0zPR66PTtvMsmifu/5Noh1VuO6CY="
+                  "key": "kIXX3JHYhQZB4ScDSyfS9rmCMTaAbuyeW2tGHbzeVyQ="
                 },
                 "value": {
-                  "denom": "utia",
+                  "denom": "ucele",
                   "amount": "5000000000"
                 }
               }
             ],
-            "memo": "7ca765de485bcdc0251306bb3933232b89d7858b@192.168.71.32:26656",
+            "memo": "99a88b2427256f6328ec434a5a018c02974873b3@192.168.71.32:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -302,7 +302,7 @@
               {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "Amg9j+1CIdpWigv8Hzx7obw1AY5BZroCgOeXeyifRbxd"
+                  "key": "AjIMZ5qO996PIhJ8M6dzdNSRk2EytCa+XXjHFcLEvcU6"
                 },
                 "mode_info": {
                   "single": {
@@ -321,7 +321,7 @@
             "tip": null
           },
           "signatures": [
-            "GxVTsrzzvphGIFsXUMLj00BvJ1bB8s1LTQXPUxsppjsAMqYwJ2Fqurx0QAG3Ehu3ZGzjpbkgIQ6Em55l/2xw9Q=="
+            "1DEeWJSTFcOa969tDt8BOJnXIPmcQFKSoeODu4t/zPRBR5Kmc/XwtYTTQ5uNDP5FV0/c89jVHT3qzzTEaxqLcg=="
           ]
         },
         {
@@ -342,19 +342,19 @@
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "celestia14juh2npe3x6d6v6gz7hdmls49g26fphvqzum4r",
-                "validator_address": "celestiavaloper14juh2npe3x6d6v6gz7hdmls49g26fphv9a7zr9",
+                "delegator_address": "cele14dms5rv5fk54krjxtpyl2cu3zuk04j7lvx55f7",
+                "validator_address": "celevaloper14dms5rv5fk54krjxtpyl2cu3zuk04j7lrwj6uk",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "Y22NpWZAmZeDh9wWovuuJOwMiF47ID+Ox1Ao3PftUho="
+                  "key": "sdTdUXzDowWorQFs0FKufRLjvEilpxedPTSsy+LPKn0="
                 },
                 "value": {
-                  "denom": "utia",
+                  "denom": "ucele",
                   "amount": "5000000000"
                 }
               }
             ],
-            "memo": "be3ec0df17d30cd11bd102bfea74c3b00a5c3aa5@192.168.71.32:26656",
+            "memo": "a9c222e1c89cfacbd7e91a7feafde725c0fc0c7b@192.168.71.32:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -364,7 +364,7 @@
               {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "As4cswuzcb3IGTEf04j71Bgefh3YVc6RW51y7/ZVniVD"
+                  "key": "A/2fHLSmWDgH/xJBFvCz+qvhvajkNrGaUEbhh3Tn8Enb"
                 },
                 "mode_info": {
                   "single": {
@@ -383,7 +383,7 @@
             "tip": null
           },
           "signatures": [
-            "roulIj02bUWMtiZWnNtMBS6tN09+NiFuRDEzS8+dLsZiFXzMqApBG7BWmiyxgafN/jDTy/RNAcPE7MgKo5bJpQ=="
+            "PZ1XYrsSuFOdqyy12gQssmeg3rUoRjKV659LBEMH3VoRIGhI0N/xdM6GSQfZekaw12ALEPh7zKJQkDXz7Q66CA=="
           ]
         },
         {
@@ -404,19 +404,19 @@
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
-                "delegator_address": "celestia1qs065k4437mdxt0ecj2mjw2rptfy7gnxrkaayw",
-                "validator_address": "celestiavaloper1qs065k4437mdxt0ecj2mjw2rptfy7gnxxflyjg",
+                "delegator_address": "cele1ddhwmdkehpc6f0plvpyzs2c2cqk2k3qv6zamg7",
+                "validator_address": "celevaloper1ddhwmdkehpc6f0plvpyzs2c2cqk2k3qv42m4ak",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "OCgQvtoc8MtetEB+YUYxAiaABJ+3ZJrJQASwXr3prwE="
+                  "key": "4snOZ/1ddbZaz2WLFSTvMCOLPvCFKAMB+2hDfFWUjo4="
                 },
                 "value": {
-                  "denom": "utia",
+                  "denom": "ucele",
                   "amount": "5000000000"
                 }
               }
             ],
-            "memo": "e77276ecb22ef42fe7ed30b64cfb4da8f72fdd51@192.168.71.32:26656",
+            "memo": "d2e8487b1d3fccf237fe12917cd4160f6ebea01f@192.168.71.32:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -426,7 +426,7 @@
               {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "A23GFAxheEZFrbum6ep5IloZZwkURjMbJaVYMGjUaz4t"
+                  "key": "A5vrE7kXXmQr1e27hJak9DxCgnRgE1ass7VAOWJ4dodw"
                 },
                 "mode_info": {
                   "single": {
@@ -445,7 +445,7 @@
             "tip": null
           },
           "signatures": [
-            "eMiPo8SdyOCeQRZJel7xHJIYJ9BklkCPraJ6O6OOoMhDGh/t8ahdwMJ9zkebb1rzN0zHeToK395/ZQb45TlQzQ=="
+            "nLVT2RG/ukYFo89Tv7qJNlU9L3DJ58bN1SeEodFODqRieLYsEwixHe+u7Z2a8y+7C6kRUke+Fb6ev74o/BRMzg=="
           ]
         }
       ]
@@ -458,7 +458,7 @@
       "deposit_params": {
         "min_deposit": [
           {
-            "denom": "utia",
+            "denom": "ucele",
             "amount": "10000000000"
           }
         ],
@@ -507,7 +507,7 @@
       }
     },
     "mint": {
-      "bond_denom": "utia"
+      "bond_denom": "ucele"
     },
     "params": null,
     "qgb": {
@@ -532,7 +532,7 @@
         "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 10000,
-        "bond_denom": "utia",
+        "bond_denom": "ucele",
         "min_commission_rate": "0.050000000000000000"
       },
       "last_total_power": "0",

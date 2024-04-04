@@ -1,0 +1,84 @@
+version: '3'
+
+services:
+  cele1:
+    image: webbshi/celestia-app-ucele:v1.6.0
+    restart: always
+    container_name: 'cele-9000-1'
+    command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
+    environment:
+      APP_PATH: '/home/celestia/'
+    ports:
+      - 26656:26656
+      - 26657:26657
+      - 21317:1317
+      - 29090:9090
+    volumes:
+      - ./chainData/cele-network/peer1:/home/celestia/.celestia-app
+    networks:
+      localnet:
+        ipv4_address: 192.167.10.2
+
+  cele2:
+    image: webbshi/celestia-app-ucele:v1.6.0
+    restart: always
+    container_name: 'cele-9000-2'
+    command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
+    environment:
+      APP_PATH: '/home/celestia/'
+    ports:
+      - 26666:26656
+      - 26667:26657
+      - 21327:1317
+      - 29091:9090
+    volumes:
+      - ./chainData/cele-network/peer2:/home/celestia/.celestia-app
+    networks:
+      localnet:
+        ipv4_address: 192.167.10.3
+
+  cele3:
+    image: webbshi/celestia-app-ucele:v1.6.0
+    restart: always
+    container_name: 'cele-9000-3'
+    command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
+    environment:
+      APP_PATH: '/home/celestia/'
+    ports:
+      - 26676:26656
+      - 26677:26657
+      - 21337:1317
+      - 29093:9090
+    volumes:
+      - ./chainData/cele-network/peer3:/home/celestia/.celestia-app
+    networks:
+      localnet:
+        ipv4_address: 192.167.10.4
+
+
+  cele4:
+    image: webbshi/celestia-app-ucele:v1.6.0
+    restart: always
+    container_name: 'cele-9000-4'
+    command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
+    environment:
+      APP_PATH: '/home/celestia/'
+    ports:
+      - 26686:26656
+      - 26687:26657
+      - 21347:1317
+      - 29094:9090
+    volumes:
+      - ./chainData/cele-network/peer4:/home/celestia/.celestia-app
+    networks:
+      localnet:
+        ipv4_address: 192.167.10.5
+
+networks:
+  localnet:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        -
+          subnet: 192.167.10.0/16

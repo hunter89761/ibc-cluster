@@ -2,7 +2,7 @@ version: '3'
 
 services:
   cele1:
-    image: webbshi/celestia-app:v1.6.0
+    image: webbshi/celestia-app-ucele:v1.6.0
     restart: always
     container_name: 'cele-9000-1'
     command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
@@ -20,7 +20,7 @@ services:
         ipv4_address: 192.167.10.2
 
   cele2:
-    image: webbshi/celestia-app:v1.6.0
+    image: webbshi/celestia-app-ucele:v1.6.0
     restart: always
     container_name: 'cele-9000-2'
     command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
@@ -38,7 +38,7 @@ services:
         ipv4_address: 192.167.10.3
 
   cele3:
-    image: webbshi/celestia-app:v1.6.0
+    image: webbshi/celestia-app-ucele:v1.6.0
     restart: always
     container_name: 'cele-9000-3'
     command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
@@ -57,7 +57,7 @@ services:
 
 
   cele4:
-    image: webbshi/celestia-app:v1.6.0
+    image: webbshi/celestia-app-ucele:v1.6.0
     restart: always
     container_name: 'cele-9000-4'
     command: '/bin/celestia-appd start --grpc.enable --home /home/celestia/.celestia-app/'
