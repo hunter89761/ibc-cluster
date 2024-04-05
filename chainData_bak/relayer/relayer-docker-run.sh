@@ -25,10 +25,10 @@ rly q balance cele validator1
 rly q balance celestia node0
 
 # rly paths new [src-chain-id] [dst-chain-id] [path-name] [flags]
-rly paths new cele-9000 celestia-9002 test_path
+rly paths new cele-9000 celestia-9002 test_path --order ordered --src-port transfer --dst-port transfer
 
 echo "rly transact clients test_path"
-rly transact link test_path --debug --src-port transfer --dst-port transfer --order unordered --version ics20-1
+rly transact link test_path --debug --src-port transfer --dst-port transfer --order ordered --version ics20-1
 
 echo -e "link successed!!!\n\n\n\n\n\n\n\n"
 

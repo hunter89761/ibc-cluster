@@ -123,10 +123,26 @@ cele16qv76myyhj7wjej6pt3rmh580p5s3u7eu0z2h6 \
 
 # in the root path
 celestia-appd-ucele tx ibc-transfer transfer transfer channel-0 \
+cele16qv76myyhj7wjej6pt3rmh580p5s3u7eu0z2h6 100ucele \
+--from cele1ftajzzcnfm5rdmgmzecpva7cvty8dgj5ynjqrk \
+--chain-id cele-9000 \
+--node http://localhost:26657 --gas 200000 \
+--gas-prices 0.025ucele --broadcast-mode block \
+--home ./localnet/keys/cele-9000 --keyring-backend test -y
+
+
+
+celestia-appd-ucele tx ibc-transfer transfer transfer channel-0 \
 celestia1cqv76myyhj7wjej6pt3rmh580p5s3u74c3m8yx 100ucele \
 --from cele1ftajzzcnfm5rdmgmzecpva7cvty8dgj5ynjqrk \
 --chain-id cele-9000 \
 --node http://localhost:26657 --gas 200000 \
 --gas-prices 0.025ucele --broadcast-mode block \
 --home ./localnet/keys/cele-9000 --keyring-backend test -y
+
+
+
+celestia-appd query account \
+celestia1cqv76myyhj7wjej6pt3rmh580p5s3u74c3m8yx \
+--node tcp://localhost:36657
 ```
