@@ -28,9 +28,9 @@ rly q balance celestia node0
 rly paths new cele-9000 celestia-9002 test_path
 
 echo "rly transact clients test_path"
-rly transact link test_path --debug
+rly transact link test_path --debug --src-port transfer --dst-port transfer --order unordered --version ics20-1
 
-echo "link successed!!!\n\n\n\n\n\n\n\n"
+echo -e "link successed!!!\n\n\n\n\n\n\n\n"
 
 # echo "rly start"
 rly start --debug
