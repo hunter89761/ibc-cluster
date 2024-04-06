@@ -84,6 +84,8 @@ celestia-appd query bank balances \
 celestia1ftajzzcnfm5rdmgmzecpva7cvty8dgj5x3qllr \
 --node tcp://localhost:36657
 
+
+celestia-appd-ucele query bank balances cele1ftajzzcnfm5rdmgmzecpva7cvty8dgj5ynjqrk
 celestia-appd query bank balances \
 celestia1cqv76myyhj7wjej6pt3rmh580p5s3u74c3m8yx \
 --node tcp://localhost:36657
@@ -115,7 +117,7 @@ celestia-appd-ucele query tx \
 
 celestia-appd-ucele tx bank send cele1ftajzzcnfm5rdmgmzecpva7cvty8dgj5ynjqrk \
 cele16qv76myyhj7wjej6pt3rmh580p5s3u7eu0z2h6 \
-100ucele --chain-id cele-9000 \
+1000000ucele --chain-id cele-9000 \
 --node http://localhost:26657 --gas 200000 \
 --gas-prices 0.025ucele --broadcast-mode block \
 --home ./localnet/keys/cele-9000 --keyring-backend test \
@@ -133,7 +135,7 @@ cele16qv76myyhj7wjej6pt3rmh580p5s3u7eu0z2h6 100ucele \
 
 
 celestia-appd-ucele tx ibc-transfer transfer transfer channel-0 \
-celestia1cqv76myyhj7wjej6pt3rmh580p5s3u74c3m8yx 100ucele \
+celestia1cqv76myyhj7wjej6pt3rmh580p5s3u74c3m8yx 10000000ucele \
 --from cele1ftajzzcnfm5rdmgmzecpva7cvty8dgj5ynjqrk \
 --chain-id cele-9000 \
 --node http://localhost:26657 --gas 200000 \
@@ -145,4 +147,11 @@ celestia1cqv76myyhj7wjej6pt3rmh580p5s3u74c3m8yx 100ucele \
 celestia-appd query account \
 celestia1cqv76myyhj7wjej6pt3rmh580p5s3u74c3m8yx \
 --node tcp://localhost:36657
+
+
+celestia-appd query bank balances \
+celestia1a53udazy8ayufvy0s434pfwjcedzqv348xn43r \
+--node tcp://localhost:36657
+
+celestia-appd-ucele query bank balances cele1a53udazy8ayufvy0s434pfwjcedzqv349yp2dk
 ```

@@ -27,10 +27,16 @@ rly q balance celestia node0
 
 
 # rly paths new [src-chain-id] [dst-chain-id] [path-name] [flags]
-rly paths new cele-9000 celestia-9002 test_path --order ordered --src-port transfer --dst-port transfer
+rly paths new cele-9000 celestia-9002 test_path --order unordered --src-port transfer --dst-port transfer  --version ics20-1
 
-echo "rly transact clients test_path"
-rly transact link test_path --debug --src-port transfer --dst-port transfer --order ordered --version ics20-1
+echo "rly transact link test_path"
+sleep 100
+rly transact link test_path --debug --src-port transfer --dst-port transfer --order unordered  --version ics20-1
+#rly transact link test_path --debug --src-port transfer --dst-port transfer --order unordered --version ics20-1
+
+
+#rly transact channel test_path --src-port transfer-1 --dst-port transfer-1 --order unordered --version ics20-1 --debug
+
 
 #echo "rly transact connection test_path"
 #rly transact connection test_path --block-history 40 --debug
