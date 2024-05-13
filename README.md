@@ -21,4 +21,8 @@ celestia-appd-ucele query bank balances cele1ftajzzcnfm5rdmgmzecpva7cvty8dgj5ynj
 celestia-appd query bank balances \
 celestia1cqv76myyhj7wjej6pt3rmh580p5s3u74c3m8yx \
 --node tcp://localhost:36657
+
+celestia-appd query bank balances \
+celestia1cqv76myyhj7wjej6pt3rmh580p5s3u74c3m8yx \
+--node tcp://localhost:36657
 ```

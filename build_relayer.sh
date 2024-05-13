@@ -10,7 +10,7 @@
 #docker push webbshi/evmosd
 #cd ..
 
-docker build -t webbshi/ibc-relayer .
+docker build -t webbshi/ibc-initia-relayer .
 docker push webbshi/ibc-relayer
 
 
